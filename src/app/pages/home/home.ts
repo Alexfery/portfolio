@@ -3,10 +3,10 @@ import { Hero } from './components/hero/hero';
 import { Skills } from './components/skills/skills';
 import { Projects } from './components/projects/projects';
 import { Contact } from './components/contact/contact';
-
+import { Challenges } from './components/challenges/challenges';
 @Component({
   selector: 'app-home',
-  imports: [Hero, Skills, Projects, Contact],
+  imports: [Hero, Skills, Projects, Contact, Challenges],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })
