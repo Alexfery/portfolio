@@ -72,3 +72,29 @@
     flex-wrap: wrap;
   }
 }
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 24px 60px;
+
+    .hero-content {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      padding: 0;
+      gap: 40px;
+    }
+
+    .hero-visual .avatar {
+      width: 220px;
+      height: 220px;
+    }
+
+    .hero-actions {
+      justify-content: center;
+    }
+
+    .hero-desc {
+      max-width: 100%;
+    }
+  }
+}

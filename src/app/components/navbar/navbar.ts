@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+
 @Component({
   selector: 'app-navbar',
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './navbar.html',
-  styleUrl: './navbar.scss',
+  styleUrl: './navbar.scss'
 })
-export class Navbar {}
+export class Navbar {
+  scrollTo(id: string) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  }
+}

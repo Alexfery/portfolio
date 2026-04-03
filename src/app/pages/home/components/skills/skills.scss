@@ -55,3 +55,12 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .skills {
+    padding: 60px 24px;
+
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

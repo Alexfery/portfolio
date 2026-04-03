@@ -70,3 +70,12 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .projects {
+    padding: 60px 24px;
+
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
