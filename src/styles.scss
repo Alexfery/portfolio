@@ -50,6 +50,9 @@ html {
 
 body {
   background-color: var(--color-bg);
+   background-image: 
+    radial-gradient(ellipse at bottom right, rgba(90, 82, 224, 0.3) 0%, transparent 60%),
+    radial-gradient(ellipse at bottom left, rgba(255, 101, 132, 0.3) 0%, transparent 60%);
   color: var(--color-text-primary);
   font-family: var(--font-main);
   line-height: 1.6;
