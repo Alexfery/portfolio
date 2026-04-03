@@ -17,6 +17,7 @@
     font-weight: 700;
     color: var(--color-accent);
     letter-spacing: 1px;
+    cursor: pointer;
   }
 
   .nav-links {
@@ -28,6 +29,7 @@
       font-size: 0.95rem;
       font-weight: 500;
       transition: color 0.3s;
+      cursor: pointer;
 
       &:hover {
         color: var(--color-accent);
@@ -35,6 +37,12 @@
     }
   }
 }
+.logo-img {
+  height: 40px;
+  width: auto;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .navbar {
     padding: 16px 24px;
