@@ -1,44 +1,20 @@
 <section class="challenges" id="challenges">
-  <h2 class="section-title">Challenges</h2>
-  <p class="section-sub">Competiții în care particip</p>
+  <h2 class="section-title">{{ langService.t().challenges.title }}</h2>
+  <p class="section-sub">{{ langService.t().challenges.sub }}</p>
 
   <div class="challenges-grid">
-
-    <article class="challenge-card">
-      <div class="card-header">
-        <h3>Polyhack</h3>
-        <span class="card-tag card-tag--active">24-26 Aprilie</span>
-      </div>
-      <p class="challenge-role">Backend Developer</p>
-      <p>Hackathon de dezvoltare de aplicații. Construiesc backend-ul folosind NestJS.</p>
-      <div class="challenge-tech">
-        <span>NestJS</span>
-      </div>
-    </article>
-
-    <article class="challenge-card">
-      <div class="card-header">
-        <h3>MicroMouse</h3>
-        <span class="card-tag card-tag--soon">Coming Soon</span>
-      </div>
-      <p class="challenge-role">Robotics</p>
-      <p>Competiție de robotică autonomă — un robot rezolvă un labirint fără intervenție umană.</p>
-      <div class="challenge-tech">
-        <span>Embedded</span>
-      </div>
-    </article>
-
-    <article class="challenge-card">
-      <div class="card-header">
-        <h3>IoT Student Challenge 2026</h3>
-        <span class="card-tag card-tag--soon">28 Mai 2026</span>
-      </div>
-      <p class="challenge-role">IoT Developer</p>
-      <p>Competiție studențească focusată pe soluții Internet of Things inovatoare.</p>
-      <div class="challenge-tech">
-        <span>IoT</span>
-      </div>
-    </article>
-
+    @for (item of langService.t().challenges.items; track item.title) {
+      <article class="challenge-card">
+        <div class="card-header">
+          <h3>{{ item.title }}</h3>
+          <span class="card-tag card-tag--active">{{ item.date }}</span>
+        </div>
+        <p class="challenge-role">{{ item.role }}</p>
+        <p>{{ item.desc }}</p>
+        <div class="challenge-tech">
+          <span>{{ item.tech }}</span>
+        </div>
+      </article>
+    }
   </div>
-</section>  
+</section>

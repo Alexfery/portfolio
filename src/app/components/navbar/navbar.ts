@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../../services/language';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.scss'
 })
 export class Navbar {
+  constructor(public langService: LanguageService) {}
+
   scrollTo(id: string) {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: 'smooth' });

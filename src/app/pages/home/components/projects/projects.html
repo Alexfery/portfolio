@@ -1,52 +1,19 @@
 <section class="projects" id="projects">
-  <h2 class="section-title">Proiecte</h2>
-  <p class="section-sub">Ce am construit până acum</p>
+  <h2 class="section-title">{{ langService.t().projects.title }}</h2>
+  <p class="section-sub">{{ langService.t().projects.sub }}</p>
 
   <div class="projects-grid">
-
-    <article class="project-card">
-      <div class="card-header">
-        <h3>Solar System Explorer</h3>
-        <span class="card-tag">Python</span>
-      </div>
-      <p>
-        Simulare a Sistemului Solar care citește date planetare din fișiere
-        și calculează gravitația de suprafață și viteza de escape folosind
-        mecanică celestă. Interfață interactivă cu Tkinter și NumPy.
-      </p>
-      <div class="card-links">
-        <a href="https://github.com/Alexfery/SolarSystem" target="_blank">GitHub</a>
-      </div>
-    </article>
-
-    <article class="project-card">
-      <div class="card-header">
-        <h3>GitHub Profile</h3>
-        <span class="card-tag">Open Source</span>
-      </div>
-      <p>
-        Colecție de proiecte personale și experimente în C/C++, Python,
-        Java și alte tehnologii. Acces la tot codul sursă pe GitHub.
-      </p>
-      <div class="card-links">
-        <a href="https://github.com/Alexfery" target="_blank">GitHub</a>
-      </div>
-    </article>
-
-    <article class="project-card">
-      <div class="card-header">
-        <h3>FLL Robotics — XEO</h3>
-        <span class="card-tag">Robotics</span>
-      </div>
-      <p>
-        Membru al echipei de robotică a liceului. Locul 1 la competiția
-        FIRST LEGO League, martie 2021. Responsabil pentru design și
-        fabricarea modulelor mecanice.
-      </p>
-      <div class="card-links">
-        <a href="https://github.com/Alexfery" target="_blank">GitHub</a>
-      </div>
-    </article>
-
+    @for (item of langService.t().projects.items; track item.title) {
+      <article class="project-card">
+        <div class="card-header">
+          <h3>{{ item.title }}</h3>
+          <span class="card-tag">{{ item.tag }}</span>
+        </div>
+        <p>{{ item.desc }}</p>
+        <div class="card-links">
+          <a [href]="item.link" target="_blank">GitHub</a>
+        </div>
+      </article>
+    }
   </div>
 </section>

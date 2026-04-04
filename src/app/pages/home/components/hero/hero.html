@@ -1,19 +1,14 @@
 <section class="hero" id="hero">
   <div class="hero-content">
     <div class="hero-text">
-      <p class="hero-tag">Buna ziua! Sunt</p>
+      <p class="hero-tag">{{ langService.t().hero.tag }}</p>
       <h1 class="hero-name">Fer Alexandru Virgil</h1>
-      <h2>Automatica si Informatica Aplicata, UTCN</h2>
-      <p class="hero-desc">
-        Student la UTCN Cluj-Napoca, interesat de cybersecurity,
-        dezvoltare și tehnologii emergente, atat soft, cat si hardware. Mereu gata să aplice
-        cunoștințele în proiecte reale. Dedicat si, in primul rand, curios.
-      </p>
+      <h2 class="hero-role">{{ langService.t().hero.role }}</h2>
+      <p class="hero-desc">{{ langService.t().hero.desc }}</p>
       <div class="hero-actions">
-        <a class="btn-secondary" href="assets/Fer_Alexandru_Virgil_CV.pdf" target="_blank" download>Download CV</a>
+        <a class="btn-secondary" href="assets/Fer_Alexandru_Virgil_CV.pdf" target="_blank" download>{{ langService.t().hero.btn_cv }}</a>
       </div>
     </div>
-
     <div class="hero-visual">
       <img src="assets/pprofil.jpeg" alt="Fer Alexandru Virgil" class="avatar" />
     </div>

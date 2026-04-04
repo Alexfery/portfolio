@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LanguageService } from '../../../../services/language';
 
 @Component({
   selector: 'app-challenges',
@@ -6,4 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './challenges.html',
   styleUrl: './challenges.scss',
 })
-export class Challenges {}
+export class Challenges {
+      constructor(public langService: LanguageService) {}
+
+}
