@@ -3,9 +3,10 @@ import { RouterOutlet } from '@angular/router';
 import { Footer } from './components/footer/footer';
 import { Navbar } from './components/navbar/navbar';
 import { Router } from '@angular/router';
+import { LanguageSelector } from './components/language-selector/language-selector';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, Footer],
+  imports: [RouterOutlet, Navbar, Footer, LanguageSelector],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

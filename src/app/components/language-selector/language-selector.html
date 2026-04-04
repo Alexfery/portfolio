@@ -1,0 +1,19 @@
+<div class="overlay" [style.display]="isHidden() ? 'none' : 'flex'" [class.fading]="isFadingOut()">
+  <div class="selector-box" [class.fade-out]="isFadingOut()">
+
+    <div class="lang-options" [style.opacity]="selectedLang() ? '0' : '1'" [style.pointer-events]="selectedLang() ? 'none' : 'auto'">
+      <p class="choose-text">Choose your language</p>
+      <div class="lang-buttons">
+        <button (click)="selectLang('ro')">RO</button>
+        <button (click)="selectLang('en')">EN</button>
+        <button (click)="selectLang('de')">DE</button>
+        <button (click)="selectLang('fr')">FR</button>
+      </div>
+    </div>
+
+    <div class="greeting" [class.fade-in-text]="showGreeting()">
+      {{ greeting() }}
+    </div>
+
+  </div>
+</div>
