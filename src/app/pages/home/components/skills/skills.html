@@ -1,39 +1,16 @@
-<section class="skills" id="skills">
-  <h2 class="section-title">{{ langService.t().skills.title }}</h2>
-  <p class="section-sub">{{ langService.t().skills.sub }}</p>
+<section class="section" id="skills">
+  <h2 class="section-title"><span class="prefix">~/</span>{{ langService.t().skills.title }}</h2>
 
-  <div class="skills-grid">
-
-    <div class="skill-category">
-      <h3>Programming</h3>
-      <ul>
-        <li>C / C++</li>
-        <li>Java</li>
-        <li>Typescript</li>
-        <li>PostgreSQL</li>
-      </ul>
-    </div>
-
-    <div class="skill-category">
-      <h3>Tools & Tech</h3>
-      <ul>
-        <li>Git & GitHub</li>
-        <li>Linux</li>
-        <li>MATLAB</li>
-        <li>Nestjs</li>
-        <li>Angular</li>
-      </ul>
-    </div>
-
-    <div class="skill-category">
-      <h3>Other</h3>
-      <ul>
-        <li>Cybersecurity</li>
-        <li>CAD Design</li>
-        <li>Microsoft Office</li>
-        <li>Lucru în echipă</li>
-      </ul>
-    </div>
-
+  <div class="grid">
+    @for (group of langService.t().skills.groups; track group.label) {
+      <div class="card group">
+        <p class="label">{{ group.label }}</p>
+        <div class="chips">
+          @for (chip of group.items; track chip) {
+            <span class="chip">{{ chip }}</span>
+          }
+        </div>
+      </div>
+    }
   </div>
 </section>

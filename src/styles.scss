@@ -1,38 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
 // ═══════════════════════════════
-// Variabile globale
+// Design tokens — terminal theme
 // ═══════════════════════════════
-:root {
-  // Culori principale
-  --color-bg: #0a0a0f;
-  --color-bg-secondary: #12121a;
-  --color-bg-card: #1a1a2e;
+@mixin dark-vars {
+  --bg: #0e0c08;
+  --fg: #eae4d6;
+  --muted: #8d8471;
+  --card: #161310;
+  --border: #2b2519;
+  --acc-text: var(--accent);
+  --acc-soft: color-mix(in oklch, var(--accent), var(--bg) 87%);
+  color-scheme: dark;
+}
 
-  // Accent
-  --color-accent: #6c63ff;
-  --color-accent-hover: #5a52e0;
-  --color-accent-secondary: #ff6584;
+body {
+  --accent: #f59e0b;
+  --bg: #faf8f3;
+  --fg: #211d15;
+  --muted: #736a58;
+  --card: #ffffff;
+  --border: #e6dfd0;
+  --acc-text: color-mix(in oklch, var(--accent), black 32%);
+  --acc-soft: color-mix(in oklch, var(--accent), var(--bg) 90%);
+  color-scheme: light;
+}
 
-  // Text
-  --color-text-primary: #f0f0f0;
-  --color-text-secondary: #a0a0b0;
-  --color-text-muted: #606070;
+body[data-theme='dark'] {
+  @include dark-vars;
+}
 
-  // Border
-  --color-border: rgba(108, 99, 255, 0.2);
-
-  // Spacing
-  --section-padding: 100px 0;
-  --container-width: 1100px;
-
-  // Font
-  --font-main: 'Inter', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-
-  // Border radius
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme='light']) {
+    @include dark-vars;
+  }
 }
 
 // ═══════════════════════════════
@@ -49,97 +48,109 @@ html {
 }
 
 body {
-  background-color: var(--color-bg);
-   background-image: 
-    radial-gradient(ellipse at bottom right, rgba(90, 82, 224, 0.3) 0%, transparent 60%),
-    radial-gradient(ellipse at bottom left, rgba(255, 101, 132, 0.3) 0%, transparent 60%);
-  color: var(--color-text-primary);
-  font-family: var(--font-main);
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'JetBrains Mono', monospace;
   line-height: 1.6;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--acc-text);
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 ul {
   list-style: none;
 }
 
+body,
+header,
+section,
+footer,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+button {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+// ═══════════════════════════════
+// CRT scanlines overlay
+// ═══════════════════════════════
+.scanlines {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 99;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.045) 0px,
+    rgba(0, 0, 0, 0.045) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  mix-blend-mode: multiply;
+}
+
 // ═══════════════════════════════
 // Utilitare globale
 // ═══════════════════════════════
-.container {
-  max-width: var(--container-width);
+.section {
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 24px 24px 64px;
 }
 
 .section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+  margin: 0 0 24px;
+  font-size: 20px;
+  font-weight: 800;
 
-.section-sub {
-  color: var(--color-text-secondary);
-  font-size: 1.1rem;
-  margin-bottom: 60px;
-}
-
-.btn-primary {
-  display: inline-block;
-  padding: 14px 32px;
-  background: var(--color-accent);
-  color: #fff;
-  border-radius: var(--radius-sm);
-  font-weight: 600;
-  transition: background 0.3s, transform 0.2s;
-
-  &:hover {
-    background: var(--color-accent-hover);
-    transform: translateY(-2px);
+  .prefix {
+    color: var(--acc-text);
   }
 }
 
-.btn-secondary {
-  display: inline-block;
-  padding: 14px 32px;
-  border: 1px solid var(--color-accent);
-  color: var(--color-accent);
-  border-radius: var(--radius-sm);
-  font-weight: 600;
-  transition: all 0.3s;
-
-  &:hover {
-    background: var(--color-accent);
-    color: #fff;
-    transform: translateY(-2px);
-  }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
 }
+
 // ═══════════════════════════════
 // Animații scroll
 // ═══════════════════════════════
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
 
   &.visible {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.fade-in:nth-child(2) {
-  transition-delay: 0.2s;
-}
-
-.fade-in:nth-child(3) {
-  transition-delay: 0.2s;
 }

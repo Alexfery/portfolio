@@ -1,11 +1,17 @@
-<nav class="navbar">
-  <a class="logo" (click)="scrollTo('hero')">
-    <img src="assets/logo1.png" alt="AF Logo" class="logo-img" />
-  </a>
-  <ul class="nav-links">
-    <li><a (click)="scrollTo('skills')">{{ langService.t().navbar.skills }}</a></li>
-    <li><a (click)="scrollTo('projects')">{{ langService.t().navbar.projects }}</a></li>
-    <li><a (click)="scrollTo('challenges')">{{ langService.t().navbar.challenges }}</a></li>
-    <li><a (click)="scrollTo('contact')">{{ langService.t().navbar.contact }}</a></li>
-  </ul>
-</nav>
+<header class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" (click)="scrollTo('hero')">fer&#64;alexandru<span class="tilde">:~</span><span class="dollar">$</span></a>
+    <nav class="links">
+      <a (click)="scrollTo('projects')">{{ langService.t().navbar.projects }}</a>
+      <a (click)="scrollTo('skills')">{{ langService.t().navbar.skills }}</a>
+      <a (click)="scrollTo('education')">{{ langService.t().navbar.education }}</a>
+      <a (click)="scrollTo('contact')">{{ langService.t().navbar.contact }}</a>
+    </nav>
+    <div class="actions">
+      <button type="button" (click)="langService.cycle()">
+        {{ langService.currentLang().toUpperCase() }} → {{ langService.nextLang().toUpperCase() }}
+      </button>
+      <button type="button" (click)="themeService.toggle()">◐ {{ langService.t().navbar.theme }}</button>
+    </div>
+  </div>
+</header>

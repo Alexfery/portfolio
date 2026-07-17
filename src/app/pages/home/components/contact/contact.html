@@ -1,24 +1,26 @@
-<section class="contact" id="contact">
-  <h2 class="section-title">{{ langService.t().contact.title }}</h2>
-  <p class="section-sub">{{ langService.t().contact.sub }}</p>
+<section class="section contact-section" id="contact">
+  <h2 class="section-title"><span class="prefix">~/</span>{{ langService.t().contact.title }}</h2>
 
-  <div class="contact-wrapper">
-    <div class="contact-info">
-      <p>{{ langService.t().contact.desc }}</p>
-      <ul class="contact-links">
-        <li>
-          <span class="contact-label">Email</span>
-          <a href="mailto:fer_alexandru_virgil@outlook.com">fer_alexandru_virgil@outlook.com</a>
-        </li>
-        <li>
-          <span class="contact-label">GitHub</span>
-          <a href="https://github.com/Alexfery" target="_blank">github.com/Alexfery</a>
-        </li>
-        <li>
-          <span class="contact-label">Telefon</span>
-          <a href="tel:+40753128888">(+40) 753 128 888</a>
-        </li>
-      </ul>
+  <div class="card panel">
+    <p class="prompt"><span class="dollar">$</span> {{ langService.t().contact.prompt }}</p>
+    <p class="heading">{{ langService.t().contact.heading }}</p>
+    <div class="grid">
+      <div class="item">
+        <span class="label">Email</span>
+        <a href="mailto:fer_alexandru_virgil@outlook.com">fer_alexandru_virgil&#64;outlook.com</a>
+      </div>
+      <div class="item">
+        <span class="label">{{ langService.t().contact.phoneLabel }}</span>
+        <a href="tel:+40753128888">(+40) 753 128 888</a>
+      </div>
+      <div class="item">
+        <span class="label">GitHub</span>
+        <a href="https://github.com/Alexfery" target="_blank">github.com/Alexfery ↗</a>
+      </div>
+      <div class="item">
+        <span class="label">Web</span>
+        <a href="https://feralexandru.com" target="_blank">feralexandru.com ↗</a>
+      </div>
     </div>
   </div>
 </section>

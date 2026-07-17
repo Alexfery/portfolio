@@ -1,16 +1,10 @@
 <section class="hero" id="hero">
-  <div class="hero-content">
-    <div class="hero-text">
-      <p class="hero-tag">{{ langService.t().hero.tag }}</p>
-      <h1 class="hero-name">Fer Alexandru Virgil</h1>
-      <h2 class="hero-role">{{ langService.t().hero.role }}</h2>
-      <p class="hero-desc">{{ langService.t().hero.desc }}</p>
-      <div class="hero-actions">
-        <a class="btn-secondary" href="assets/Fer_Alexandru_Virgil_CV.pdf" target="_blank" download>{{ langService.t().hero.btn_cv }}</a>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <img src="assets/pprofil.jpeg" alt="Fer Alexandru Virgil" class="avatar" />
-    </div>
+  <p class="prompt"><span class="dollar">$</span> whoami</p>
+  <h1 class="name">Fer Alexandru Virgil<span class="cursor"></span></h1>
+  <p class="desc">{{ langService.t().hero.desc1 }}<span class="hl">{{ langService.t().hero.studies }}</span>{{ langService.t().hero.desc2 }}<span class="acc">{{ langService.t().hero.cyber }}</span>{{ langService.t().hero.desc3 }}<span class="acc">{{ langService.t().hero.quantum }}</span>{{ langService.t().hero.mid }}<span class="acc">{{ langService.t().hero.web }}</span>{{ langService.t().hero.desc4 }}</p>
+  <div class="actions">
+    <a class="btn-solid" href="https://github.com/Alexfery" target="_blank">GitHub ↗</a>
+    <a class="btn-ghost" href="mailto:fer_alexandru_virgil@outlook.com">Email</a>
+    <a class="btn-ghost" href="assets/Fer_Alexandru_Virgil_CV.pdf" target="_blank" download>{{ langService.t().hero.btn_cv }}</a>
   </div>
 </section>

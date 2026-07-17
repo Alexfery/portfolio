@@ -1,19 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { Footer } from './components/footer/footer';
 import { Navbar } from './components/navbar/navbar';
-import { Router } from '@angular/router';
-import { LanguageSelector } from './components/language-selector/language-selector';
+import { ThemeService } from './services/theme';
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, Footer, LanguageSelector],
+  imports: [RouterOutlet, Navbar, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App implements OnInit{
-  constructor(private router: Router) {}
+export class App implements OnInit {
+  constructor(
+    private router: Router,
+    private themeService: ThemeService
+  ) {}
+
   ngOnInit() {
+    this.themeService.init();
     window.scrollTo(0, 0);
     this.router.navigate(['/'], { replaceUrl: true });
-}
+  }
 }

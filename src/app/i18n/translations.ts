@@ -1,310 +1,474 @@
-export const translations: Record<string, any> = {
+﻿export const translations: Record<string, any> = {
   ro: {
     navbar: {
-      skills: 'Competențe',
-      projects: 'Proiecte',
-      challenges: 'Provocări',
-      contact: 'Contact'
+      projects: 'proiecte',
+      skills: 'skills',
+      education: 'educație',
+      contact: 'contact',
+      theme: 'temă'
     },
     hero: {
-      tag: 'Bună ziua! Sunt',
-      role: 'Automatică și Informatică Aplicată, UTCN',
-      desc: 'Student la UTCN Cluj-Napoca, interesat de cybersecurity, dezvoltare și tehnologii emergente, atât soft, cât și hardware. Mereu gata să aplice cunoștințele în proiecte reale. Dedicat și, în primul rând, curios.',
+      desc1: 'Student la ',
+      studies: 'Automatică',
+      desc2: ' @ UTCN, în cadrul Facultății de Automatică și Calculatoare. Pasionat de ',
+      cyber: 'cybersecurity',
+      desc3: ' și de experimentarea unor domenii precum ',
+      quantum: 'quantum computing',
+      mid: ' și ',
+      web: 'web development',
+      desc4: ', aplicând mereu cunoștințele în proiecte reale.',
       btn_cv: 'Descarcă CV'
     },
-    skills: {
-      title: 'Competențe',
-      sub: 'Tehnologii cu care lucrez'
-    },
     projects: {
-      title: 'Proiecte',
-      sub: 'Ce am construit până acum',
+      title: 'proiecte',
       items: [
         {
-          title: 'Solar System Explorer',
-          tag: 'Python',
-          desc: 'Simulare a Sistemului Solar care citește date planetare din fișiere și calculează gravitația de suprafață și viteza de escape folosind mecanică celestă. Interfață interactivă cu Tkinter și NumPy.',
-          link: 'https://github.com/Alexfery/SolarSystem'
+          badge: 'HACKATHON',
+          tech: 'NestJS · PostgreSQL',
+          title: 'Polyhack — Backend',
+          desc: 'Arhitectură backend în NestJS, livrată sub deadline strâns într-o echipă agile de 5 persoane. Cluj-Napoca, 2026.',
+          link: 'https://github.com/Alexfery',
+          linkLabel: 'github.com/Alexfery ↗'
         },
         {
-          title: 'GitHub Profile',
-          tag: 'Open Source',
-          desc: 'Colecție de proiecte personale și experimente în C/C++, Python, Java și alte tehnologii. Acces la tot codul sursă pe GitHub.',
-          link: 'https://github.com/Alexfery'
-        },
-        {
-          title: 'FLL Robotics — XEO',
-          tag: 'Robotics',
-          desc: 'Membru al echipei de robotică a liceului. Locul 1 la competiția FIRST LEGO League, martie 2021. Responsabil pentru design și fabricarea modulelor mecanice.',
-          link: 'https://github.com/Alexfery'
+          badge: 'ROBOTICS',
+          tech: 'FIRST LEGO League',
+          title: 'Echipa XEO — locul 1',
+          desc: 'Design și fabricarea modulelor mecanice pentru competiție; câștigători FIRST LEGO League, martie 2021.'
         }
       ]
     },
-    challenges: {
-      title: 'Provocări',
-      sub: 'Competiții în care particip',
+    websites: {
+      title: 'websites',
       items: [
         {
-          title: 'Polyhack',
-          date: '24-26 Aprilie',
-          role: 'Backend Developer',
-          desc: 'Hackathon de dezvoltare de aplicații. Construiesc backend-ul folosind NestJS.',
-          tech: 'NestJS'
+          badge: 'CURRENT',
+          tech: 'Angular · TypeScript',
+          title: 'feralexandru.com',
+          desc: 'Portofoliu construit de la zero în Angular, pentru a prezenta experiența, skill-urile și proiectele tehnice.',
+          link: 'https://feralexandru.com',
+          linkLabel: 'feralexandru.com ↗'
         },
         {
-          title: 'MicroMouse',
-          date: 'Coming Soon',
-          role: 'Robotică',
-          desc: 'Competiție de robotică autonomă — un robot rezolvă un labirint fără intervenție umană.',
-          tech: 'Embedded'
+          badge: 'CLIENT',
+          tech: 'React · Decap CMS',
+          title: 'francescaiurian.com',
+          desc: 'Am gândit sistemul și arhitectura site-ului, de la structură până la lansare.',
+          link: 'https://francescaiurian.com',
+          linkLabel: 'francescaiurian.com ↗'
         },
         {
-          title: 'IoT Student Challenge 2026',
-          date: '28 Mai 2026',
-          role: 'IoT Developer',
-          desc: 'Competiție studențească focusată pe soluții Internet of Things inovatoare.',
-          tech: 'IoT'
+          badge: 'CLIENT',
+          tech: 'React · TypeScript · Java · Supabase · Cloudinary',
+          title: 'urbankeller.de',
+          desc: 'Am gândit sistemul și arhitectura site-ului, de la structură până la lansare.',
+          link: 'https://urbankeller.de',
+          linkLabel: 'urbankeller.de ↗'
         }
+      ]
+    },
+    skills: {
+      title: 'skills',
+      groups: [
+        { label: 'Limbaje', items: ['C', 'C++', 'Java', 'Python', 'TypeScript', 'MATLAB', 'SQL'] },
+        { label: 'Frameworks', items: ['Angular', 'PostgreSQL', 'Qiskit'] },
+        { label: 'Tools', items: ['Linux', 'Git', 'Microsoft Office'] }
+      ]
+    },
+    education: {
+      title: 'educație',
+      items: [
+        {
+          period: '2024 — prezent',
+          title: 'Automatică — Universitatea Tehnică din Cluj-Napoca',
+          place: 'Cluj-Napoca, RO',
+          url: 'https://www.utcluj.ro',
+          urlLabel: 'utcluj.ro'
+        },
+        {
+          period: '2025',
+          title: 'Google Cybersecurity Professional Certificate',
+          place: 'Coursera',
+          url: 'https://www.coursera.org',
+          urlLabel: 'coursera.org'
+        },
+        {
+          period: '2020 — 2024',
+          title: 'Colegiul Național Horea, Cloșca și Crișan',
+          place: 'Alba Iulia, RO',
+          url: 'https://www.hcc.ro',
+          urlLabel: 'hcc.ro'
+        }
+      ]
+    },
+    languages: {
+      title: 'limbi',
+      items: [
+        { name: 'Română', level: 'nativ', pct: 100 },
+        { name: 'Engleză', level: 'B2–C1', pct: 80 },
+        { name: 'Germană', level: 'A2', pct: 30 },
+        { name: 'Franceză', level: 'A2', pct: 30 }
       ]
     },
     contact: {
-      title: 'Contact',
-      sub: 'Hai să vorbim',
-      desc: 'Disponibil pentru internship-uri, colaborări sau proiecte interesante.'
-    },
-    footer: {
-      built: 'Construit cu Angular'
+      title: 'contact',
+      prompt: 'hai să colaborăm',
+      heading: 'Deschis pentru proiecte, internship-uri și colaborări.',
+      phoneLabel: 'Telefon'
     }
   },
   en: {
     navbar: {
-      skills: 'Skills',
-      projects: 'Projects',
-      challenges: 'Challenges',
-      contact: 'Contact'
+      projects: 'projects',
+      skills: 'skills',
+      education: 'education',
+      contact: 'contact',
+      theme: 'theme'
     },
     hero: {
-      tag: 'Hi, I\'m',
-      role: 'Automation and Applied Informatics, UTCN',
-      desc: 'Student at UTCN Cluj-Napoca, interested in cybersecurity, software and hardware development and emerging technologies. Always ready to apply knowledge in real projects. Dedicated and, above all, curious.',
+      desc1: '',
+      studies: 'Automation',
+      desc2: ' student @ UTCN, at the Faculty of Automation and Computer Science. Passionate about ',
+      cyber: 'cybersecurity',
+      desc3: ' and experimenting across domains like ',
+      quantum: 'quantum computing',
+      mid: ' and ',
+      web: 'web development',
+      desc4: ', always applying knowledge to real-world projects.',
       btn_cv: 'Download CV'
     },
-    skills: {
-      title: 'Skills',
-      sub: 'Technologies I work with'
-    },
     projects: {
-      title: 'Projects',
-      sub: 'What I\'ve built so far',
+      title: 'projects',
       items: [
         {
-          title: 'Solar System Explorer',
-          tag: 'Python',
-          desc: 'Solar System simulation that reads planetary data from files and calculates surface gravity and escape velocity using celestial mechanics. Interactive interface with Tkinter and NumPy.',
-          link: 'https://github.com/Alexfery/SolarSystem'
+          badge: 'HACKATHON',
+          tech: 'NestJS · PostgreSQL',
+          title: 'Polyhack — Backend',
+          desc: 'Backend architecture in NestJS, delivered under tight deadlines in a 5-member agile team. Cluj-Napoca, 2026.',
+          link: 'https://github.com/Alexfery',
+          linkLabel: 'github.com/Alexfery ↗'
         },
         {
-          title: 'GitHub Profile',
-          tag: 'Open Source',
-          desc: 'Collection of personal projects and experiments in C/C++, Python, Java and other technologies. Access to all source code on GitHub.',
-          link: 'https://github.com/Alexfery'
-        },
-        {
-          title: 'FLL Robotics — XEO',
-          tag: 'Robotics',
-          desc: 'Member of the high school robotics team. 1st place at the FIRST LEGO League competition, March 2021. Responsible for the design and fabrication of mechanical modules.',
-          link: 'https://github.com/Alexfery'
+          badge: 'ROBOTICS',
+          tech: 'FIRST LEGO League',
+          title: 'XEO team — 1st place',
+          desc: 'Designed and fabricated mechanical modules for competition; FIRST LEGO League winners, March 2021.'
         }
       ]
     },
-    challenges: {
-      title: 'Challenges',
-      sub: 'Competitions I participate in',
+    websites: {
+      title: 'websites',
       items: [
         {
-          title: 'Polyhack',
-          date: 'April 24-26',
-          role: 'Backend Developer',
-          desc: 'Application development hackathon. Building the backend using NestJS.',
-          tech: 'NestJS'
+          badge: 'CURRENT',
+          tech: 'Angular · TypeScript',
+          title: 'feralexandru.com',
+          desc: 'Portfolio built from scratch with Angular to showcase experience, skills and technical projects.',
+          link: 'https://feralexandru.com',
+          linkLabel: 'feralexandru.com ↗'
         },
         {
-          title: 'MicroMouse',
-          date: 'Coming Soon',
-          role: 'Robotics',
-          desc: 'Autonomous robotics competition — a robot solves a maze without human intervention.',
-          tech: 'Embedded'
+          badge: 'CLIENT',
+          tech: 'React · Decap CMS',
+          title: 'francescaiurian.com',
+          desc: 'I designed the system and architecture of the site, from structure to launch.',
+          link: 'https://francescaiurian.com',
+          linkLabel: 'francescaiurian.com ↗'
         },
         {
-          title: 'IoT Student Challenge 2026',
-          date: 'May 28, 2026',
-          role: 'IoT Developer',
-          desc: 'Student competition focused on innovative Internet of Things solutions.',
-          tech: 'IoT'
+          badge: 'CLIENT',
+          tech: 'React · TypeScript · Java · Supabase · Cloudinary',
+          title: 'urbankeller.de',
+          desc: 'I designed the system and architecture of the site, from structure to launch.',
+          link: 'https://urbankeller.de',
+          linkLabel: 'urbankeller.de ↗'
         }
+      ]
+    },
+    skills: {
+      title: 'skills',
+      groups: [
+        { label: 'Languages', items: ['C', 'C++', 'Java', 'Python', 'TypeScript', 'MATLAB', 'SQL'] },
+        { label: 'Frameworks', items: ['Angular', 'PostgreSQL', 'Qiskit'] },
+        { label: 'Tools', items: ['Linux', 'Git', 'Microsoft Office'] }
+      ]
+    },
+    education: {
+      title: 'education',
+      items: [
+        {
+          period: '2024 — now',
+          title: 'Automation — Technical University of Cluj-Napoca',
+          place: 'Cluj-Napoca, RO',
+          url: 'https://www.utcluj.ro',
+          urlLabel: 'utcluj.ro'
+        },
+        {
+          period: '2025',
+          title: 'Google Cybersecurity Professional Certificate',
+          place: 'Coursera',
+          url: 'https://www.coursera.org',
+          urlLabel: 'coursera.org'
+        },
+        {
+          period: '2020 — 2024',
+          title: 'H.C.C. National College',
+          place: 'Alba Iulia, RO',
+          url: 'https://www.hcc.ro',
+          urlLabel: 'hcc.ro'
+        }
+      ]
+    },
+    languages: {
+      title: 'languages',
+      items: [
+        { name: 'Romanian', level: 'native', pct: 100 },
+        { name: 'English', level: 'B2–C1', pct: 80 },
+        { name: 'German', level: 'A2', pct: 30 },
+        { name: 'French', level: 'A2', pct: 30 }
       ]
     },
     contact: {
-      title: 'Contact',
-      sub: 'Let\'s talk',
-      desc: 'Available for internships, collaborations or interesting projects.'
-    },
-    footer: {
-      built: 'Built with Angular'
+      title: 'contact',
+      prompt: "let's work together",
+      heading: 'Open to projects, internships and collaborations.',
+      phoneLabel: 'Phone'
     }
   },
   de: {
     navbar: {
-      skills: 'Fähigkeiten',
-      projects: 'Projekte',
-      challenges: 'Herausforderungen',
-      contact: 'Kontakt'
+      projects: 'projekte',
+      skills: 'skills',
+      education: 'ausbildung',
+      contact: 'kontakt',
+      theme: 'thema'
     },
     hero: {
-      tag: 'Hallo, ich bin',
-      role: 'Automatisierung und Angewandte Informatik, UTCN',
-      desc: 'Student an der UTCN Cluj-Napoca, interessiert an Cybersicherheit, Software- und Hardwareentwicklung und neuen Technologien. Immer bereit, Wissen in echten Projekten anzuwenden. Engagiert und vor allem neugierig.',
+      desc1: 'Student der ',
+      studies: 'Automatik',
+      desc2: ' @ UTCN, an der Fakultät für Automatik und Informatik. Begeistert von ',
+      cyber: 'Cybersecurity',
+      desc3: ' und dem Experimentieren in Bereichen wie ',
+      quantum: 'Quantencomputing',
+      mid: ' und ',
+      web: 'Webentwicklung',
+      desc4: ' – Wissen stets in realen Projekten angewandt.',
       btn_cv: 'Lebenslauf herunterladen'
     },
-    skills: {
-      title: 'Fähigkeiten',
-      sub: 'Technologien mit denen ich arbeite'
-    },
     projects: {
-      title: 'Projekte',
-      sub: 'Was ich bisher gebaut habe',
+      title: 'projekte',
       items: [
         {
-          title: 'Solar System Explorer',
-          tag: 'Python',
-          desc: 'Sonnensystem-Simulation, die Planetendaten aus Dateien liest und Oberflächengravitation und Fluchtgeschwindigkeit mithilfe von Himmelsmechanik berechnet. Interaktive Oberfläche mit Tkinter und NumPy.',
-          link: 'https://github.com/Alexfery/SolarSystem'
+          badge: 'HACKATHON',
+          tech: 'NestJS · PostgreSQL',
+          title: 'Polyhack — Backend',
+          desc: 'Backend-Architektur in NestJS, unter engem Zeitplan in einem agilen 5-köpfigen Team geliefert. Cluj-Napoca, 2026.',
+          link: 'https://github.com/Alexfery',
+          linkLabel: 'github.com/Alexfery ↗'
         },
         {
-          title: 'GitHub Profile',
-          tag: 'Open Source',
-          desc: 'Sammlung persönlicher Projekte und Experimente in C/C++, Python, Java und anderen Technologien. Zugang zum gesamten Quellcode auf GitHub.',
-          link: 'https://github.com/Alexfery'
-        },
-        {
-          title: 'FLL Robotics — XEO',
-          tag: 'Robotics',
-          desc: 'Mitglied des Robotik-Teams der Schule. 1. Platz beim FIRST LEGO League Wettbewerb, März 2021. Verantwortlich für Design und Fertigung mechanischer Module.',
-          link: 'https://github.com/Alexfery'
+          badge: 'ROBOTICS',
+          tech: 'FIRST LEGO League',
+          title: 'Team XEO — 1. Platz',
+          desc: 'Design und Fertigung der mechanischen Module für den Wettbewerb; Sieger der FIRST LEGO League, März 2021.'
         }
       ]
     },
-    challenges: {
-      title: 'Herausforderungen',
-      sub: 'Wettbewerbe an denen ich teilnehme',
+    websites: {
+      title: 'websites',
       items: [
         {
-          title: 'Polyhack',
-          date: '24.-26. April',
-          role: 'Backend-Entwickler',
-          desc: 'Hackathon für Anwendungsentwicklung. Ich baue das Backend mit NestJS.',
-          tech: 'NestJS'
+          badge: 'CURRENT',
+          tech: 'Angular · TypeScript',
+          title: 'feralexandru.com',
+          desc: 'Von Grund auf mit Angular gebautes Portfolio, um Erfahrung, Skills und technische Projekte zu präsentieren.',
+          link: 'https://feralexandru.com',
+          linkLabel: 'feralexandru.com ↗'
         },
         {
-          title: 'MicroMouse',
-          date: 'Demnächst',
-          role: 'Robotik',
-          desc: 'Autonomer Robotikwettbewerb — ein Roboter löst ein Labyrinth ohne menschliche Eingriffe.',
-          tech: 'Embedded'
+          badge: 'CLIENT',
+          tech: 'React · Decap CMS',
+          title: 'francescaiurian.com',
+          desc: 'System und Architektur der Website von mir entworfen, von der Struktur bis zum Launch.',
+          link: 'https://francescaiurian.com',
+          linkLabel: 'francescaiurian.com ↗'
         },
         {
-          title: 'IoT Student Challenge 2026',
-          date: '28. Mai 2026',
-          role: 'IoT-Entwickler',
-          desc: 'Studentenwettbewerb mit Fokus auf innovative Internet-of-Things-Lösungen.',
-          tech: 'IoT'
+          badge: 'CLIENT',
+          tech: 'React · TypeScript · Java · Supabase · Cloudinary',
+          title: 'urbankeller.de',
+          desc: 'System und Architektur der Website von mir entworfen, von der Struktur bis zum Launch.',
+          link: 'https://urbankeller.de',
+          linkLabel: 'urbankeller.de ↗'
         }
+      ]
+    },
+    skills: {
+      title: 'skills',
+      groups: [
+        { label: 'Sprachen', items: ['C', 'C++', 'Java', 'Python', 'TypeScript', 'MATLAB', 'SQL'] },
+        { label: 'Frameworks', items: ['Angular', 'PostgreSQL', 'Qiskit'] },
+        { label: 'Tools', items: ['Linux', 'Git', 'Microsoft Office'] }
+      ]
+    },
+    education: {
+      title: 'ausbildung',
+      items: [
+        {
+          period: '2024 — heute',
+          title: 'Automatisierung — Technische Universität Cluj-Napoca',
+          place: 'Cluj-Napoca, RO',
+          url: 'https://www.utcluj.ro',
+          urlLabel: 'utcluj.ro'
+        },
+        {
+          period: '2025',
+          title: 'Google Cybersecurity Professional Certificate',
+          place: 'Coursera',
+          url: 'https://www.coursera.org',
+          urlLabel: 'coursera.org'
+        },
+        {
+          period: '2020 — 2024',
+          title: 'Nationalkolleg Horea, Cloșca și Crișan',
+          place: 'Alba Iulia, RO',
+          url: 'https://www.hcc.ro',
+          urlLabel: 'hcc.ro'
+        }
+      ]
+    },
+    languages: {
+      title: 'sprachen',
+      items: [
+        { name: 'Rumänisch', level: 'Muttersprache', pct: 100 },
+        { name: 'Englisch', level: 'B2–C1', pct: 80 },
+        { name: 'Deutsch', level: 'A2', pct: 30 },
+        { name: 'Französisch', level: 'A2', pct: 30 }
       ]
     },
     contact: {
-      title: 'Kontakt',
-      sub: 'Lass uns reden',
-      desc: 'Verfügbar für Praktika, Kooperationen oder interessante Projekte.'
-    },
-    footer: {
-      built: 'Erstellt mit Angular'
+      title: 'kontakt',
+      prompt: 'lass uns zusammenarbeiten',
+      heading: 'Offen für Projekte, Praktika und Kooperationen.',
+      phoneLabel: 'Telefon'
     }
   },
   fr: {
     navbar: {
-      skills: 'Compétences',
-      projects: 'Projets',
-      challenges: 'Défis',
-      contact: 'Contact'
+      projects: 'projets',
+      skills: 'skills',
+      education: 'éducation',
+      contact: 'contact',
+      theme: 'thème'
     },
     hero: {
-      tag: 'Bonjour, je suis',
-      role: 'Automatique et Informatique Appliquée, UTCN',
-      desc: 'Étudiant à l\'UTCN Cluj-Napoca, intéressé par la cybersécurité, le développement logiciel et matériel et les technologies émergentes. Toujours prêt à appliquer ses connaissances dans des projets réels. Dédié et avant tout curieux.',
-      btn_cv: 'Télécharger CV'
-    },
-    skills: {
-      title: 'Compétences',
-      sub: 'Technologies avec lesquelles je travaille'
+      desc1: 'Étudiant en ',
+      studies: 'Automatique',
+      desc2: " @ UTCN, à la Faculté d'Automatique et Informatique. Passionné par la ",
+      cyber: 'cybersécurité',
+      desc3: " et l'expérimentation de domaines comme le ",
+      quantum: 'quantum computing',
+      mid: ' et le ',
+      web: 'développement web',
+      desc4: ', en appliquant toujours mes connaissances à des projets réels.',
+      btn_cv: 'Télécharger le CV'
     },
     projects: {
-      title: 'Projets',
-      sub: 'Ce que j\'ai construit jusqu\'à présent',
+      title: 'projets',
       items: [
         {
-          title: 'Solar System Explorer',
-          tag: 'Python',
-          desc: 'Simulation du Système Solaire qui lit les données planétaires à partir de fichiers et calcule la gravité de surface et la vitesse de libération en utilisant la mécanique céleste. Interface interactive avec Tkinter et NumPy.',
-          link: 'https://github.com/Alexfery/SolarSystem'
+          badge: 'HACKATHON',
+          tech: 'NestJS · PostgreSQL',
+          title: 'Polyhack — Backend',
+          desc: "Architecture backend en NestJS, livrée dans des délais serrés au sein d'une équipe agile de 5 personnes. Cluj-Napoca, 2026.",
+          link: 'https://github.com/Alexfery',
+          linkLabel: 'github.com/Alexfery ↗'
         },
         {
-          title: 'GitHub Profile',
-          tag: 'Open Source',
-          desc: 'Collection de projets personnels et d\'expériences en C/C++, Python, Java et d\'autres technologies. Accès à tout le code source sur GitHub.',
-          link: 'https://github.com/Alexfery'
-        },
-        {
-          title: 'FLL Robotics — XEO',
-          tag: 'Robotics',
-          desc: 'Membre de l\'équipe de robotique du lycée. 1ère place au concours FIRST LEGO League, mars 2021. Responsable de la conception et de la fabrication des modules mécaniques.',
-          link: 'https://github.com/Alexfery'
+          badge: 'ROBOTICS',
+          tech: 'FIRST LEGO League',
+          title: 'Équipe XEO — 1ère place',
+          desc: 'Conception et fabrication des modules mécaniques pour la compétition ; vainqueurs de la FIRST LEGO League, mars 2021.'
         }
       ]
     },
-    challenges: {
-      title: 'Défis',
-      sub: 'Compétitions auxquelles je participe',
+    websites: {
+      title: 'websites',
       items: [
         {
-          title: 'Polyhack',
-          date: '24-26 Avril',
-          role: 'Développeur Backend',
-          desc: 'Hackathon de développement d\'applications. Je construis le backend en utilisant NestJS.',
-          tech: 'NestJS'
+          badge: 'CURRENT',
+          tech: 'Angular · TypeScript',
+          title: 'feralexandru.com',
+          desc: "Portfolio construit de zéro avec Angular pour présenter mon expérience, mes compétences et mes projets techniques.",
+          link: 'https://feralexandru.com',
+          linkLabel: 'feralexandru.com ↗'
         },
         {
-          title: 'MicroMouse',
-          date: 'Bientôt',
-          role: 'Robotique',
-          desc: 'Compétition de robotique autonome — un robot résout un labyrinthe sans intervention humaine.',
-          tech: 'Embedded'
+          badge: 'CLIENT',
+          tech: 'React · Decap CMS',
+          title: 'francescaiurian.com',
+          desc: "Système et architecture du site conçus par moi, de la structure au lancement.",
+          link: 'https://francescaiurian.com',
+          linkLabel: 'francescaiurian.com ↗'
         },
         {
-          title: 'IoT Student Challenge 2026',
-          date: '28 Mai 2026',
-          role: 'Développeur IoT',
-          desc: 'Compétition étudiante axée sur des solutions Internet des objets innovantes.',
-          tech: 'IoT'
+          badge: 'CLIENT',
+          tech: 'React · TypeScript · Java · Supabase · Cloudinary',
+          title: 'urbankeller.de',
+          desc: "Système et architecture du site conçus par moi, de la structure au lancement.",
+          link: 'https://urbankeller.de',
+          linkLabel: 'urbankeller.de ↗'
         }
+      ]
+    },
+    skills: {
+      title: 'skills',
+      groups: [
+        { label: 'Langages', items: ['C', 'C++', 'Java', 'Python', 'TypeScript', 'MATLAB', 'SQL'] },
+        { label: 'Frameworks', items: ['Angular', 'PostgreSQL', 'Qiskit'] },
+        { label: 'Tools', items: ['Linux', 'Git', 'Microsoft Office'] }
+      ]
+    },
+    education: {
+      title: 'éducation',
+      items: [
+        {
+          period: '2024 — présent',
+          title: 'Automatique — Université Technique de Cluj-Napoca',
+          place: 'Cluj-Napoca, RO',
+          url: 'https://www.utcluj.ro',
+          urlLabel: 'utcluj.ro'
+        },
+        {
+          period: '2025',
+          title: 'Google Cybersecurity Professional Certificate',
+          place: 'Coursera',
+          url: 'https://www.coursera.org',
+          urlLabel: 'coursera.org'
+        },
+        {
+          period: '2020 — 2024',
+          title: 'Collège National Horea, Cloșca și Crișan',
+          place: 'Alba Iulia, RO',
+          url: 'https://www.hcc.ro',
+          urlLabel: 'hcc.ro'
+        }
+      ]
+    },
+    languages: {
+      title: 'langues',
+      items: [
+        { name: 'Roumain', level: 'natif', pct: 100 },
+        { name: 'Anglais', level: 'B2–C1', pct: 80 },
+        { name: 'Allemand', level: 'A2', pct: 30 },
+        { name: 'Français', level: 'A2', pct: 30 }
       ]
     },
     contact: {
-      title: 'Contact',
-      sub: 'Parlons',
-      desc: 'Disponible pour des stages, collaborations ou projets intéressants.'
-    },
-    footer: {
-      built: 'Construit avec Angular'
+      title: 'contact',
+      prompt: 'travaillons ensemble',
+      heading: 'Ouvert aux projets, stages et collaborations.',
+      phoneLabel: 'Téléphone'
     }
   }
 };
