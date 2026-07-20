@@ -1,0 +1,15 @@
+<section class="section" id="languages">
+  <h2 class="section-title"><span class="prefix">~/</span>{{ langService.t().languages.title }}</h2>
+
+  <div class="card panel">
+    @for (item of langService.t().languages.items; track item.name) {
+      <div class="row">
+        <span class="name">{{ item.name }}</span>
+        <div class="bar">
+          <div class="fill" [style.width.%]="item.pct"></div>
+        </div>
+        <span class="level">{{ item.level }}</span>
+      </div>
+    }
+  </div>
+</section>

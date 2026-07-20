@@ -1,0 +1,16 @@
+<section class="section" id="certifications">
+  <h2 class="section-title"><span class="prefix">~/</span>{{ langService.t().certifications.title }}</h2>
+
+  <div class="grid">
+    @for (item of langService.t().certifications.items; track item.title) {
+      <article class="card cert-card">
+        <div class="meta">
+          <span class="badge">{{ item.issuer }}</span>
+        </div>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.detail }}</p>
+        <a class="link" [href]="item.file" target="_blank">{{ item.viewLabel }} ↗</a>
+      </article>
+    }
+  </div>
+</section>

@@ -4,12 +4,13 @@ import { Skills } from './components/skills/skills';
 import { Projects } from './components/projects/projects';
 import { Websites } from './components/websites/websites';
 import { Education } from './components/education/education';
+import { Certifications } from './components/certifications/certifications';
 import { Languages } from './components/languages/languages';
 import { Contact } from './components/contact/contact';
 
 @Component({
   selector: 'app-home',
-  imports: [Hero, Projects, Websites, Skills, Education, Languages, Contact],
+  imports: [Hero, Projects, Websites, Skills, Education, Certifications, Languages, Contact],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })

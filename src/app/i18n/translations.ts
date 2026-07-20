@@ -75,6 +75,39 @@
         { label: 'Tools', items: ['Linux', 'Git', 'Microsoft Office'] }
       ]
     },
+    certifications: {
+      title: 'certificări',
+      items: [
+        {
+          issuer: 'Udemy',
+          title: 'Fundamentals of Backend Engineering',
+          detail: 'Instructor Hussein Nasser · 19.5 ore',
+          file: 'assets/certificates/udemy-backend-engineering.pdf',
+          viewLabel: 'Vezi certificatul'
+        },
+        {
+          issuer: 'Udemy',
+          title: 'Complete Web Development Course',
+          detail: 'Instructor Hitesh Choudhary · 100 ore',
+          file: 'assets/certificates/udemy-web-development.pdf',
+          viewLabel: 'Vezi certificatul'
+        },
+        {
+          issuer: 'Coursera',
+          title: 'Metasploit for Beginners: Ethical Penetration Testing',
+          detail: 'Proiect practic de penetration testing cu Metasploit',
+          file: 'assets/certificates/coursera-metasploit-pentest.pdf',
+          viewLabel: 'Vezi certificatul'
+        },
+        {
+          issuer: 'Google · Coursera',
+          title: 'Google Cybersecurity',
+          detail: 'Certificat profesional · 8 cursuri despre securitate cibernetică',
+          file: 'assets/certificates/coursera-google-cybersecurity.pdf',
+          viewLabel: 'Vezi certificatul'
+        }
+      ]
+    },
     education: {
       title: 'educație',
       items: [
@@ -84,13 +117,6 @@
           place: 'Cluj-Napoca, RO',
           url: 'https://www.utcluj.ro',
           urlLabel: 'utcluj.ro'
-        },
-        {
-          period: '2025',
-          title: 'Google Cybersecurity Professional Certificate',
-          place: 'Coursera',
-          url: 'https://www.coursera.org',
-          urlLabel: 'coursera.org'
         },
         {
           period: '2020 — 2024',
@@ -193,6 +219,39 @@
         { label: 'Tools', items: ['Linux', 'Git', 'Microsoft Office'] }
       ]
     },
+    certifications: {
+      title: 'certifications',
+      items: [
+        {
+          issuer: 'Udemy',
+          title: 'Fundamentals of Backend Engineering',
+          detail: 'Instructor Hussein Nasser · 19.5 hours',
+          file: 'assets/certificates/udemy-backend-engineering.pdf',
+          viewLabel: 'View certificate'
+        },
+        {
+          issuer: 'Udemy',
+          title: 'Complete Web Development Course',
+          detail: 'Instructor Hitesh Choudhary · 100 hours',
+          file: 'assets/certificates/udemy-web-development.pdf',
+          viewLabel: 'View certificate'
+        },
+        {
+          issuer: 'Coursera',
+          title: 'Metasploit for Beginners: Ethical Penetration Testing',
+          detail: 'Hands-on penetration testing project using Metasploit',
+          file: 'assets/certificates/coursera-metasploit-pentest.pdf',
+          viewLabel: 'View certificate'
+        },
+        {
+          issuer: 'Google · Coursera',
+          title: 'Google Cybersecurity',
+          detail: 'Professional certificate · 8 courses on cybersecurity fundamentals',
+          file: 'assets/certificates/coursera-google-cybersecurity.pdf',
+          viewLabel: 'View certificate'
+        }
+      ]
+    },
     education: {
       title: 'education',
       items: [
@@ -202,13 +261,6 @@
           place: 'Cluj-Napoca, RO',
           url: 'https://www.utcluj.ro',
           urlLabel: 'utcluj.ro'
-        },
-        {
-          period: '2025',
-          title: 'Google Cybersecurity Professional Certificate',
-          place: 'Coursera',
-          url: 'https://www.coursera.org',
-          urlLabel: 'coursera.org'
         },
         {
           period: '2020 — 2024',
@@ -311,6 +363,39 @@
         { label: 'Tools', items: ['Linux', 'Git', 'Microsoft Office'] }
       ]
     },
+    certifications: {
+      title: 'zertifikate',
+      items: [
+        {
+          issuer: 'Udemy',
+          title: 'Fundamentals of Backend Engineering',
+          detail: 'Dozent Hussein Nasser · 19,5 Stunden',
+          file: 'assets/certificates/udemy-backend-engineering.pdf',
+          viewLabel: 'Zertifikat ansehen'
+        },
+        {
+          issuer: 'Udemy',
+          title: 'Complete Web Development Course',
+          detail: 'Dozent Hitesh Choudhary · 100 Stunden',
+          file: 'assets/certificates/udemy-web-development.pdf',
+          viewLabel: 'Zertifikat ansehen'
+        },
+        {
+          issuer: 'Coursera',
+          title: 'Metasploit for Beginners: Ethical Penetration Testing',
+          detail: 'Praktisches Penetrationstest-Projekt mit Metasploit',
+          file: 'assets/certificates/coursera-metasploit-pentest.pdf',
+          viewLabel: 'Zertifikat ansehen'
+        },
+        {
+          issuer: 'Google · Coursera',
+          title: 'Google Cybersecurity',
+          detail: 'Professional Certificate · 8 Kurse zu Cybersicherheit',
+          file: 'assets/certificates/coursera-google-cybersecurity.pdf',
+          viewLabel: 'Zertifikat ansehen'
+        }
+      ]
+    },
     education: {
       title: 'ausbildung',
       items: [
@@ -320,13 +405,6 @@
           place: 'Cluj-Napoca, RO',
           url: 'https://www.utcluj.ro',
           urlLabel: 'utcluj.ro'
-        },
-        {
-          period: '2025',
-          title: 'Google Cybersecurity Professional Certificate',
-          place: 'Coursera',
-          url: 'https://www.coursera.org',
-          urlLabel: 'coursera.org'
         },
         {
           period: '2020 — 2024',
@@ -429,6 +507,39 @@
         { label: 'Tools', items: ['Linux', 'Git', 'Microsoft Office'] }
       ]
     },
+    certifications: {
+      title: 'certifications',
+      items: [
+        {
+          issuer: 'Udemy',
+          title: 'Fundamentals of Backend Engineering',
+          detail: 'Instructeur Hussein Nasser · 19,5 heures',
+          file: 'assets/certificates/udemy-backend-engineering.pdf',
+          viewLabel: 'Voir le certificat'
+        },
+        {
+          issuer: 'Udemy',
+          title: 'Complete Web Development Course',
+          detail: 'Instructeur Hitesh Choudhary · 100 heures',
+          file: 'assets/certificates/udemy-web-development.pdf',
+          viewLabel: 'Voir le certificat'
+        },
+        {
+          issuer: 'Coursera',
+          title: 'Metasploit for Beginners: Ethical Penetration Testing',
+          detail: "Projet pratique de test d'intrusion avec Metasploit",
+          file: 'assets/certificates/coursera-metasploit-pentest.pdf',
+          viewLabel: 'Voir le certificat'
+        },
+        {
+          issuer: 'Google · Coursera',
+          title: 'Google Cybersecurity',
+          detail: 'Certificat professionnel · 8 cours sur la cybersécurité',
+          file: 'assets/certificates/coursera-google-cybersecurity.pdf',
+          viewLabel: 'Voir le certificat'
+        }
+      ]
+    },
     education: {
       title: 'éducation',
       items: [
@@ -438,13 +549,6 @@
           place: 'Cluj-Napoca, RO',
           url: 'https://www.utcluj.ro',
           urlLabel: 'utcluj.ro'
-        },
-        {
-          period: '2025',
-          title: 'Google Cybersecurity Professional Certificate',
-          place: 'Coursera',
-          url: 'https://www.coursera.org',
-          urlLabel: 'coursera.org'
         },
         {
           period: '2020 — 2024',
