@@ -23,6 +23,14 @@
       title: 'proiecte',
       items: [
         {
+          badge: 'QUANTUM',
+          tech: 'Python · PySide6 · NumPy',
+          title: 'Qsym',
+          desc: 'Simulator desktop interactiv pentru porți cuantice cu un singur qubit, cu vizualizare pe sfera Bloch.',
+          link: 'https://github.com/Alexfery/Qsym',
+          linkLabel: 'github.com/Alexfery/Qsym ↗'
+        },
+        {
           badge: 'HACKATHON',
           tech: 'NestJS · PostgreSQL',
           title: 'Polyhack — Backend',
@@ -166,6 +174,14 @@
     projects: {
       title: 'projects',
       items: [
+        {
+          badge: 'QUANTUM',
+          tech: 'Python · PySide6 · NumPy',
+          title: 'Qsym',
+          desc: 'Interactive desktop simulator for single-qubit quantum gates, with Bloch sphere visualization.',
+          link: 'https://github.com/Alexfery/Qsym',
+          linkLabel: 'github.com/Alexfery/Qsym ↗'
+        },
         {
           badge: 'HACKATHON',
           tech: 'NestJS · PostgreSQL',
@@ -311,6 +327,14 @@
       title: 'projekte',
       items: [
         {
+          badge: 'QUANTUM',
+          tech: 'Python · PySide6 · NumPy',
+          title: 'Qsym',
+          desc: 'Interaktiver Desktop-Simulator für Einzel-Qubit-Quantengatter mit Visualisierung auf der Bloch-Kugel.',
+          link: 'https://github.com/Alexfery/Qsym',
+          linkLabel: 'github.com/Alexfery/Qsym ↗'
+        },
+        {
           badge: 'HACKATHON',
           tech: 'NestJS · PostgreSQL',
           title: 'Polyhack — Backend',
@@ -454,6 +478,14 @@
     projects: {
       title: 'projets',
       items: [
+        {
+          badge: 'QUANTUM',
+          tech: 'Python · PySide6 · NumPy',
+          title: 'Qsym',
+          desc: 'Simulateur de bureau interactif pour portes quantiques à un qubit, avec visualisation sur la sphère de Bloch.',
+          link: 'https://github.com/Alexfery/Qsym',
+          linkLabel: 'github.com/Alexfery/Qsym ↗'
+        },
         {
           badge: 'HACKATHON',
           tech: 'NestJS · PostgreSQL',
