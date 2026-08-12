@@ -1,10 +1,20 @@
 <section class="hero" id="hero">
-  <p class="prompt"><span class="dollar">$</span> whoami</p>
-  <h1 class="name">Fer Alexandru Virgil<span class="cursor"></span></h1>
-  <p class="desc">{{ langService.t().hero.desc1 }}<span class="hl">{{ langService.t().hero.studies }}</span>{{ langService.t().hero.desc2 }}<span class="acc">{{ langService.t().hero.cyber }}</span>{{ langService.t().hero.desc3 }}<span class="acc">{{ langService.t().hero.quantum }}</span>{{ langService.t().hero.mid }}<span class="acc">{{ langService.t().hero.web }}</span>{{ langService.t().hero.desc4 }}</p>
-  <div class="actions">
-    <a class="btn-solid" href="https://github.com/Alexfery" target="_blank">GitHub ↗</a>
-    <a class="btn-ghost" href="mailto:fer_alexandru_virgil@outlook.com">Email</a>
-    <a class="btn-ghost" href="assets/Fer_Alexandru_Virgil_CV.pdf" target="_blank" download>{{ langService.t().hero.btn_cv }}</a>
+  <p class="prompt">$ whoami</p>
+  <h1 class="name">{{ typed() }}<span class="cursor"></span></h1>
+
+  <div class="hero-grid">
+    <p class="desc">{{ langService.t().hero.desc1 }}<b>{{ langService.t().hero.studies }}</b>{{ langService.t().hero.desc2 }}<b class="hl-acc">{{ langService.t().hero.cyber }}</b>{{ langService.t().hero.desc3 }}<b class="hl-acc2">{{ langService.t().hero.quantum }}</b>{{ langService.t().hero.mid }}<b class="hl-acc">{{ langService.t().hero.web }}</b>{{ langService.t().hero.desc4 }}</p>
+
+    <div class="cta">
+      <a class="cta-btn primary" href="https://github.com/Alexfery" target="_blank">
+        <span>GitHub</span><span>↗</span>
+      </a>
+      <a class="cta-btn glass" href="mailto:fer_alexandru_virgil@outlook.com">
+        <span>Email</span><span>→</span>
+      </a>
+      <a class="cta-btn glass cv" href="assets/Fer_Alexandru_Virgil_CV.pdf" target="_blank" download>
+        <span>{{ langService.t().hero.btn_cv }}</span><span>↓</span>
+      </a>
+    </div>
   </div>
 </section>

@@ -1,6 +1,6 @@
 <header class="navbar">
   <div class="navbar-inner">
-    <a class="brand" (click)="scrollTo('hero')">fer&#64;alexandru<span class="tilde">:~</span><span class="dollar">$</span></a>
+    <a class="brand" (click)="scrollTo('hero')">fer&#64;alexandru<span class="dollar">:~$</span></a>
     <nav class="links">
       <a (click)="scrollTo('projects')">{{ langService.t().navbar.projects }}</a>
       <a (click)="scrollTo('skills')">{{ langService.t().navbar.skills }}</a>
@@ -8,10 +8,19 @@
       <a (click)="scrollTo('contact')">{{ langService.t().navbar.contact }}</a>
     </nav>
     <div class="actions">
-      <button type="button" (click)="langService.cycle()">
+      <button type="button" class="btn-lang" (click)="langService.cycle()">
         {{ langService.currentLang().toUpperCase() }} → {{ langService.nextLang().toUpperCase() }}
       </button>
-      <button type="button" (click)="themeService.toggle()">◐ {{ langService.t().navbar.theme }}</button>
+      <button type="button" class="btn-theme" (click)="themeService.toggle()">
+        ◐ {{ langService.t().navbar.theme }}
+      </button>
     </div>
   </div>
 </header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>CYBERSECURITY ✦ QUANTUM COMPUTING ✦ WEB DEVELOPMENT ✦ AUTOMATION &#64; UTCN ✦ CLUJ-NAPOCA, RO ✦ CYBERSECURITY ✦ QUANTUM COMPUTING ✦ WEB DEVELOPMENT ✦ AUTOMATION &#64; UTCN ✦ CLUJ-NAPOCA, RO ✦&nbsp;</span>
+    <span>CYBERSECURITY ✦ QUANTUM COMPUTING ✦ WEB DEVELOPMENT ✦ AUTOMATION &#64; UTCN ✦ CLUJ-NAPOCA, RO ✦ CYBERSECURITY ✦ QUANTUM COMPUTING ✦ WEB DEVELOPMENT ✦ AUTOMATION &#64; UTCN ✦ CLUJ-NAPOCA, RO ✦&nbsp;</span>
+  </div>
+</div>

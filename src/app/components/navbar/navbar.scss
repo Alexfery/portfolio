@@ -2,52 +2,60 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  background: color-mix(in srgb, var(--bg), transparent 12%);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
+  background: var(--glass);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  border-bottom: 3px solid var(--ink);
 }
 
 .navbar-inner {
-  max-width: 1000px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 14px 24px;
+  padding: 12px 24px;
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .brand {
+  font-family: var(--mono);
   font-weight: 800;
   font-size: 15px;
-  color: var(--fg);
-  letter-spacing: -0.02em;
   cursor: pointer;
+  padding: 6px 12px;
+  border: 3px solid var(--ink);
+  border-radius: 999px;
+  background: var(--glass-2);
+  box-shadow: var(--hard-sm);
 
   &:hover {
     text-decoration: none;
   }
 
-  .tilde {
-    color: var(--acc-text);
-  }
-
   .dollar {
-    color: var(--muted);
+    opacity: 0.55;
   }
 }
 
 .links {
   display: flex;
-  gap: 18px;
+  gap: 6px;
   margin-left: auto;
-  font-size: 13px;
+  flex-wrap: wrap;
 
   a {
-    color: var(--muted);
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 700;
     cursor: pointer;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 3px solid transparent;
 
     &:hover {
-      color: var(--acc-text);
+      border-color: var(--ink);
+      background: var(--glass-2);
       text-decoration: none;
     }
   }
@@ -59,28 +67,70 @@
 }
 
 button {
-  font-family: inherit;
+  font-family: var(--mono);
   font-size: 12px;
-  font-weight: 700;
-  padding: 6px 12px;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  background: var(--card);
-  color: var(--fg);
+  font-weight: 800;
+  padding: 7px 14px;
+  border: 3px solid var(--ink);
+  border-radius: 999px;
   cursor: pointer;
+  color: var(--ink);
+  box-shadow: var(--hard-sm);
 
-  &:hover {
-    border-color: var(--acc-text);
-    color: var(--acc-text);
+  &:active {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 var(--ink);
   }
 }
 
-@media (max-width: 760px) {
+.btn-lang {
+  background: var(--color-accent);
+  color: #fff8f0;
+}
+
+.btn-theme {
+  background: var(--glass-2);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+}
+
+// ─── marquee ticker ───
+.marquee {
+  border-bottom: 3px solid var(--ink);
+  background: var(--color-accent-2);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 26s linear infinite;
+
+  span {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 800;
+    color: #0f120a;
+    padding: 8px 0;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
+@media (max-width: 720px) {
   .links {
-    display: none;
+    width: 100%;
+    order: 3;
+    margin-left: 0;
   }
 
-  .navbar-inner {
-    justify-content: space-between;
+  .actions {
+    margin-left: auto;
   }
 }
