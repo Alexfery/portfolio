@@ -126,18 +126,18 @@ button {
 @media (max-width: 720px) {
   .navbar-inner {
     gap: 12px;
-    padding: 10px 16px;
+    padding: 9px 16px;
+    flex-wrap: nowrap;
   }
 
   .brand {
     font-size: 13px;
   }
 
+  // Keep the sticky header a single compact row on mobile —
+  // sections stay reachable by scrolling.
   .links {
-    width: 100%;
-    order: 3;
-    margin-left: 0;
-    justify-content: center;
+    display: none;
   }
 
   .actions {
@@ -150,11 +150,6 @@ button {
 }
 
 @media (max-width: 380px) {
-  .links a {
-    padding: 6px 11px;
-    font-size: 12px;
-  }
-
   .marquee-track span {
     font-size: 12px;
   }
