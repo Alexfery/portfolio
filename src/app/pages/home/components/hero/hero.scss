@@ -14,7 +14,7 @@
 
 .name {
   margin: 0;
-  font-size: clamp(48px, 10vw, 124px);
+  font-size: clamp(34px, 12vw, 124px);
   line-height: 0.92;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -34,7 +34,7 @@
 .hero-grid {
   margin-top: 36px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 20px;
   align-items: start;
 }
@@ -113,5 +113,21 @@
 
   &.cv:hover {
     background: var(--color-accent-2-200);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 48px 16px 40px;
+  }
+
+  .desc {
+    padding: 20px;
+    font-size: 17px;
+  }
+
+  .cta-btn {
+    font-size: 15px;
+    padding: 16px 20px;
   }
 }

@@ -36,6 +36,12 @@
   }
 }
 
+@media (max-width: 640px) {
+  .timeline {
+    padding: 8px 18px;
+  }
+}
+
 @media (max-width: 560px) {
   .row {
     grid-template-columns: 1fr;

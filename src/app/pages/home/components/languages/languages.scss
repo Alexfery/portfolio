@@ -40,9 +40,20 @@
   }
 }
 
+@media (max-width: 640px) {
+  .panel {
+    padding: 20px;
+  }
+}
+
 @media (max-width: 480px) {
   .row {
-    grid-template-columns: 90px 1fr 70px;
+    grid-template-columns: 84px 1fr 62px;
     gap: 10px;
+  }
+
+  .row .name,
+  .row .level {
+    font-size: 12px;
   }
 }

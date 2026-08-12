@@ -24,7 +24,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
   gap: 16px;
 }
 
@@ -51,5 +51,11 @@
     font-size: 14px;
     font-weight: 800;
     word-break: break-all;
+  }
+}
+
+@media (max-width: 640px) {
+  .panel {
+    padding: 22px;
   }
 }
