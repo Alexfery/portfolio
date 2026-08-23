@@ -79,7 +79,7 @@
       title: 'skills',
       groups: [
         { label: 'Limbaje', items: ['C', 'C++', 'Java', 'Python', 'TypeScript', 'MATLAB', 'SQL'] },
-        { label: 'Frameworks', items: ['Angular', 'PostgreSQL', 'Qiskit'] },
+        { label: 'Frameworks', items: ['Angular', 'React', 'PostgreSQL', 'Qiskit'] },
         { label: 'Tools', items: ['Linux', 'Git', 'Microsoft Office'] }
       ]
     },
@@ -231,7 +231,7 @@
       title: 'skills',
       groups: [
         { label: 'Languages', items: ['C', 'C++', 'Java', 'Python', 'TypeScript', 'MATLAB', 'SQL'] },
-        { label: 'Frameworks', items: ['Angular', 'PostgreSQL', 'Qiskit'] },
+        { label: 'Frameworks', items: ['Angular', 'React', 'PostgreSQL', 'Qiskit'] },
         { label: 'Tools', items: ['Linux', 'Git', 'Microsoft Office'] }
       ]
     },
@@ -383,7 +383,7 @@
       title: 'skills',
       groups: [
         { label: 'Sprachen', items: ['C', 'C++', 'Java', 'Python', 'TypeScript', 'MATLAB', 'SQL'] },
-        { label: 'Frameworks', items: ['Angular', 'PostgreSQL', 'Qiskit'] },
+        { label: 'Frameworks', items: ['Angular', 'React', 'PostgreSQL', 'Qiskit'] },
         { label: 'Tools', items: ['Linux', 'Git', 'Microsoft Office'] }
       ]
     },
@@ -535,7 +535,7 @@
       title: 'skills',
       groups: [
         { label: 'Langages', items: ['C', 'C++', 'Java', 'Python', 'TypeScript', 'MATLAB', 'SQL'] },
-        { label: 'Frameworks', items: ['Angular', 'PostgreSQL', 'Qiskit'] },
+        { label: 'Frameworks', items: ['Angular', 'React', 'PostgreSQL', 'Qiskit'] },
         { label: 'Tools', items: ['Linux', 'Git', 'Microsoft Office'] }
       ]
     },

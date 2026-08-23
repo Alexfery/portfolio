@@ -18,9 +18,9 @@
   left: -10vw;
   width: 66vw;
   height: 66vw;
-  background: radial-gradient(circle at 40% 40%, var(--color-accent-400), transparent 68%);
-  filter: blur(60px);
-  opacity: 0.85;
+  background: radial-gradient(circle at 40% 40%, var(--sea), transparent 68%);
+  filter: blur(80px);
+  opacity: 0.5;
   animation: fl1 24s ease-in-out infinite;
 }
 
@@ -29,9 +29,9 @@
   right: -16vw;
   width: 60vw;
   height: 60vw;
-  background: radial-gradient(circle at 50% 50%, var(--color-accent-2-400), transparent 68%);
-  filter: blur(70px);
-  opacity: 0.85;
+  background: radial-gradient(circle at 50% 50%, var(--marine), transparent 68%);
+  filter: blur(90px);
+  opacity: 0.42;
   animation: fl2 29s ease-in-out infinite;
 }
 
@@ -40,9 +40,9 @@
   left: 20vw;
   width: 58vw;
   height: 58vw;
-  background: radial-gradient(circle at 50% 50%, var(--color-accent-300), transparent 68%);
-  filter: blur(70px);
-  opacity: 0.8;
+  background: radial-gradient(circle at 50% 50%, var(--gold), transparent 68%);
+  filter: blur(90px);
+  opacity: 0.34;
   animation: fl3 33s ease-in-out infinite;
 }
 

@@ -1,49 +1,59 @@
 // ═══════════════════════════════════════════════
-// Organic — Glass v2 design tokens
+// Aegean v3 — neumorphic glassmorphism design tokens
 // ═══════════════════════════════════════════════
 @mixin dark-vars {
-  --ink: #f7efe0;
-  --ground: #1a1714;
-  --glass: rgba(255, 255, 255, 0.09);
-  --glass-2: rgba(255, 255, 255, 0.16);
+  --sea: #3fb3bf;
+  --sea-deep: #1c7f95;
+  --sea-100: rgba(63, 179, 191, 0.18);
+  --marine: #0d1f2d;
+  --marine-100: rgba(255, 255, 255, 0.1);
+  --gold: #d3b57e;
+  --ink: #e8f1f3;
+  --ground: #0e1c26;
+  --glass: rgba(255, 255, 255, 0.07);
+  --glass-2: rgba(255, 255, 255, 0.12);
+  --stroke: rgba(255, 255, 255, 0.14);
+  --stroke-2: rgba(63, 179, 191, 0.55);
+  --hard: 16px 16px 34px rgba(0, 0, 0, 0.55), -10px -10px 26px rgba(255, 255, 255, 0.05);
+  --hard-lg: 22px 24px 48px rgba(0, 0, 0, 0.62), -12px -12px 30px rgba(255, 255, 255, 0.07);
+  --hard-sm: 8px 8px 18px rgba(0, 0, 0, 0.48), -5px -5px 13px rgba(255, 255, 255, 0.05);
+  --press: inset 6px 6px 14px rgba(0, 0, 0, 0.55), inset -4px -4px 10px rgba(255, 255, 255, 0.06);
   color-scheme: dark;
 }
 
 body {
-  // — Organic palette —
-  --color-bg: #f5ead8;
-  --color-surface: #ebddc5;
-  --color-text: #201e1d;
-  --color-accent: #c67139;
-  --color-accent-2: #7a8a5e;
+  // — Aegean palette —
+  --sea: #2a97a4;
+  --sea-deep: #116075;
+  --sea-100: #d6ecef;
+  --marine: #16354d;
+  --marine-100: #dbe5ec;
+  --gold: #c2a06a;
+  --ink: #132532;
+  --ground: #e9eff1;
 
-  --color-accent-200: #ffe1d0;
-  --color-accent-300: #ffc6a5;
-  --color-accent-400: #f6a06b;
-  --color-accent-600: #b2622d;
-  --color-accent-700: #8c491a;
-  --color-accent-900: #402310;
+  // — glass & strokes —
+  --glass: rgba(255, 255, 255, 0.42);
+  --glass-2: rgba(255, 255, 255, 0.6);
+  --stroke: rgba(255, 255, 255, 0.7);
+  --stroke-2: rgba(42, 151, 164, 0.55);
+  --blur: blur(16px) saturate(150%);
 
-  --color-accent-2-200: #e1eecc;
-  --color-accent-2-400: #aebf92;
+  // — neumorphic elevation —
+  --hard: 14px 14px 30px rgba(19, 42, 58, 0.16), -10px -10px 24px rgba(255, 255, 255, 0.8);
+  --hard-lg: 20px 22px 44px rgba(19, 42, 58, 0.2), -12px -12px 28px rgba(255, 255, 255, 0.88);
+  --hard-sm: 7px 7px 16px rgba(19, 42, 58, 0.13), -5px -5px 12px rgba(255, 255, 255, 0.75);
+  --press: inset 5px 5px 12px rgba(19, 42, 58, 0.18), inset -4px -4px 10px rgba(255, 255, 255, 0.65);
 
   // — typography —
-  --font-heading: 'Caprasimo', system-ui, sans-serif;
-  --font-body: 'Figtree', system-ui, sans-serif;
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
   --mono: 'JetBrains Mono', ui-monospace, monospace;
 
   // — radii —
+  --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 28px;
-
-  // — glass v2 —
-  --ink: var(--color-text);
-  --ground: var(--color-bg);
-  --glass: rgba(255, 255, 255, 0.34);
-  --glass-2: rgba(255, 255, 255, 0.52);
-  --blur: blur(26px) saturate(165%);
-  --hard: 8px 8px 0 var(--ink);
-  --hard-sm: 5px 5px 0 var(--ink);
 
   background: var(--ground);
   color: var(--ink);
@@ -87,7 +97,7 @@ h2,
 h3,
 h4 {
   font-family: var(--font-heading);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.12;
 }
 
@@ -97,7 +107,7 @@ a {
 
   &:hover {
     text-decoration: underline;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 2px;
     text-underline-offset: 4px;
   }
 }
@@ -191,16 +201,15 @@ button {
 
 .section-title {
   margin: 0 0 28px;
-  font-size: clamp(30px, 5vw, 54px);
-  text-transform: uppercase;
+  font-size: clamp(30px, 5vw, 52px);
+  letter-spacing: -0.015em;
 
   .prefix {
     font-family: var(--mono);
     font-size: 0.4em;
-    font-weight: 800;
     vertical-align: middle;
-    background: var(--ink);
-    color: var(--ground);
+    background: var(--marine);
+    color: #e6eff2;
     padding: 6px 10px;
     border-radius: 8px;
     margin-right: 14px;
@@ -211,29 +220,29 @@ button {
   background: var(--glass);
   backdrop-filter: var(--blur);
   -webkit-backdrop-filter: var(--blur);
-  border: 3px solid var(--ink);
+  border: 1px solid var(--stroke);
   border-radius: var(--radius-lg);
   box-shadow: var(--hard);
 }
 
-// Interactive glass cards lift toward the pointer
+// Interactive glass cards lift on hover
 .card--hover {
   cursor: default;
 
   &:hover {
-    transform: translate(-3px, -3px);
-    box-shadow: 11px 11px 0 var(--ink);
+    transform: translateY(-4px);
+    box-shadow: var(--hard-lg);
     background: var(--glass-2);
   }
 }
 
-// Brutalist mono badge/chip base
+// Mono pill badge/chip base
 .badge {
   font-family: var(--mono);
   font-size: 11px;
   font-weight: 800;
   padding: 5px 12px;
-  border: 3px solid var(--ink);
+  border: 1px solid var(--stroke);
   border-radius: 999px;
 }
 
@@ -244,7 +253,7 @@ button {
   font-weight: 800;
   margin-top: auto;
   text-decoration: underline;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
 
@@ -252,12 +261,23 @@ button {
 // Mobile
 // ═══════════════════════════════════════════════
 @media (max-width: 640px) {
+  // Lighter blur on phones — many stacked glass surfaces at blur(28px)
+  // cost real frames while scrolling on mobile GPUs.
+  body {
+    --blur: blur(12px) saturate(140%);
+  }
+
   .section {
     padding: 20px 16px 48px;
   }
 
   .section-title {
     margin-bottom: 20px;
+
+    .prefix {
+      margin-right: 10px;
+      padding: 5px 8px;
+    }
   }
 }
 

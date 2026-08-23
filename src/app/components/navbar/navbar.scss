@@ -5,7 +5,7 @@
   background: var(--glass);
   backdrop-filter: var(--blur);
   -webkit-backdrop-filter: var(--blur);
-  border-bottom: 3px solid var(--ink);
+  border-bottom: 1px solid var(--stroke);
 }
 
 .navbar-inner {
@@ -24,10 +24,16 @@
   font-size: 15px;
   cursor: pointer;
   padding: 6px 12px;
-  border: 3px solid var(--ink);
+  border: 1px solid var(--stroke);
   border-radius: 999px;
   background: var(--glass-2);
   box-shadow: var(--hard-sm);
+  // Absorbs the shrink on narrow phones so the action buttons stay
+  // full-size and tappable; truncates with an ellipsis only if space runs out.
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 
   &:hover {
     text-decoration: none;
@@ -51,10 +57,10 @@
     cursor: pointer;
     padding: 6px 14px;
     border-radius: 999px;
-    border: 3px solid transparent;
+    border: 1px solid transparent;
 
     &:hover {
-      border-color: var(--ink);
+      border-color: var(--stroke-2);
       background: var(--glass-2);
       text-decoration: none;
     }
@@ -64,28 +70,32 @@
 .actions {
   display: flex;
   gap: 8px;
+  flex-shrink: 0;
 }
 
 button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--mono);
   font-size: 12px;
   font-weight: 800;
   padding: 7px 14px;
-  border: 3px solid var(--ink);
+  border: 1px solid var(--stroke);
   border-radius: 999px;
   cursor: pointer;
   color: var(--ink);
   box-shadow: var(--hard-sm);
 
   &:active {
-    transform: translate(3px, 3px);
-    box-shadow: 2px 2px 0 var(--ink);
+    transform: translateY(2px);
+    box-shadow: var(--press);
   }
 }
 
 .btn-lang {
-  background: var(--color-accent);
-  color: #fff8f0;
+  background: var(--sea);
+  color: #f4fbfc;
 }
 
 .btn-theme {
@@ -96,8 +106,8 @@ button {
 
 // ─── marquee ticker ───
 .marquee {
-  border-bottom: 3px solid var(--ink);
-  background: var(--color-accent-2);
+  border-bottom: 1px solid var(--stroke);
+  background: var(--marine);
   overflow: hidden;
   white-space: nowrap;
 }
@@ -111,9 +121,9 @@ button {
     font-family: var(--mono);
     font-size: 13px;
     font-weight: 800;
-    color: #0f120a;
+    color: #dce8ec;
     padding: 8px 0;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.22em;
   }
 }
 
@@ -149,8 +159,27 @@ button {
   }
 }
 
+@media (max-width: 440px) {
+  .navbar-inner {
+    gap: 10px;
+    padding: 9px 14px;
+  }
+
+  button {
+    font-size: 11px;
+    padding: 6px 10px;
+    min-height: 36px;
+  }
+}
+
 @media (max-width: 380px) {
+  .brand {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
   .marquee-track span {
     font-size: 12px;
+    letter-spacing: 0.16em;
   }
 }

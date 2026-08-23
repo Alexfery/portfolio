@@ -2,7 +2,7 @@
   background: var(--glass);
   backdrop-filter: var(--blur);
   -webkit-backdrop-filter: var(--blur);
-  border: 3px solid var(--ink);
+  border: 1px solid var(--stroke);
   border-radius: var(--radius-lg);
   box-shadow: var(--hard);
   padding: 8px 28px;
@@ -13,13 +13,13 @@
   grid-template-columns: 170px 1fr;
   gap: 22px;
   padding: 24px 0;
-  border-top: 3px solid var(--ink);
+  border-top: 1px solid var(--stroke);
 
   .period {
     font-family: var(--mono);
     font-size: 13px;
     font-weight: 800;
-    color: var(--color-accent-700);
+    color: var(--sea-deep);
   }
 
   h3 {
