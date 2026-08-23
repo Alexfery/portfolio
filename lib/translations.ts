@@ -48,6 +48,7 @@ export interface Translation {
     education: string;
     contact: string;
     theme: string;
+    menu: string;
   };
   hero: {
     desc1: string;
@@ -79,7 +80,7 @@ export const NAME = "Fer Alexandru Virgil";
 
 export const translations: Record<Lang, Translation> = {
   ro: {
-    navbar: { projects: "proiecte", skills: "skills", education: "educație", contact: "contact", theme: "temă" },
+    navbar: { projects: "proiecte", skills: "skills", education: "educație", contact: "contact", theme: "temă", menu: "meniu" },
     hero: { desc1: "Student la ", studies: "Automatică", desc2: " @ UTCN, în cadrul Facultății de Automatică și Calculatoare. Pasionat de ", cyber: "cybersecurity", desc3: " și de experimentarea unor domenii precum ", quantum: "quantum computing", mid: " și ", web: "web development", desc4: ", aplicând mereu cunoștințele în proiecte reale.", btn_cv: "Descarcă CV" },
     projects: { title: "proiecte", items: [
       { badge: "QUANTUM", tech: "Python · PySide6 · NumPy", title: "Qsym", desc: "Simulator desktop interactiv pentru porți cuantice cu un singur qubit, cu vizualizare pe sfera Bloch.", link: "https://github.com/Alexfery/Qsym", linkLabel: "github.com/Alexfery/Qsym ↗" },
@@ -115,7 +116,7 @@ export const translations: Record<Lang, Translation> = {
     contact: { title: "contact", prompt: "hai să colaborăm", heading: "Deschis pentru proiecte, internship-uri și colaborări.", phoneLabel: "Telefon" },
   },
   en: {
-    navbar: { projects: "projects", skills: "skills", education: "education", contact: "contact", theme: "theme" },
+    navbar: { projects: "projects", skills: "skills", education: "education", contact: "contact", theme: "theme", menu: "menu" },
     hero: { desc1: "", studies: "Automation", desc2: " student @ UTCN, at the Faculty of Automation and Computer Science. Passionate about ", cyber: "cybersecurity", desc3: " and experimenting across domains like ", quantum: "quantum computing", mid: " and ", web: "web development", desc4: ", always applying knowledge to real-world projects.", btn_cv: "Download CV" },
     projects: { title: "projects", items: [
       { badge: "QUANTUM", tech: "Python · PySide6 · NumPy", title: "Qsym", desc: "Interactive desktop simulator for single-qubit quantum gates, with Bloch sphere visualization.", link: "https://github.com/Alexfery/Qsym", linkLabel: "github.com/Alexfery/Qsym ↗" },
@@ -151,7 +152,7 @@ export const translations: Record<Lang, Translation> = {
     contact: { title: "contact", prompt: "let's work together", heading: "Open to projects, internships and collaborations.", phoneLabel: "Phone" },
   },
   de: {
-    navbar: { projects: "projekte", skills: "skills", education: "ausbildung", contact: "kontakt", theme: "thema" },
+    navbar: { projects: "projekte", skills: "skills", education: "ausbildung", contact: "kontakt", theme: "thema", menu: "menü" },
     hero: { desc1: "Student der ", studies: "Automatik", desc2: " @ UTCN, an der Fakultät für Automatik und Informatik. Begeistert von ", cyber: "Cybersecurity", desc3: " und dem Experimentieren in Bereichen wie ", quantum: "Quantencomputing", mid: " und ", web: "Webentwicklung", desc4: " – Wissen stets in realen Projekten angewandt.", btn_cv: "Lebenslauf herunterladen" },
     projects: { title: "projekte", items: [
       { badge: "QUANTUM", tech: "Python · PySide6 · NumPy", title: "Qsym", desc: "Interaktiver Desktop-Simulator für Einzel-Qubit-Quantengatter mit Visualisierung auf der Bloch-Kugel.", link: "https://github.com/Alexfery/Qsym", linkLabel: "github.com/Alexfery/Qsym ↗" },
@@ -187,7 +188,7 @@ export const translations: Record<Lang, Translation> = {
     contact: { title: "kontakt", prompt: "lass uns zusammenarbeiten", heading: "Offen für Projekte, Praktika und Kooperationen.", phoneLabel: "Telefon" },
   },
   fr: {
-    navbar: { projects: "projets", skills: "skills", education: "éducation", contact: "contact", theme: "thème" },
+    navbar: { projects: "projets", skills: "skills", education: "éducation", contact: "contact", theme: "thème", menu: "menu" },
     hero: { desc1: "Étudiant en ", studies: "Automatique", desc2: " @ UTCN, à la Faculté d'Automatique et Informatique. Passionné par la ", cyber: "cybersécurité", desc3: " et l'expérimentation de domaines comme le ", quantum: "quantum computing", mid: " et le ", web: "développement web", desc4: ", en appliquant toujours mes connaissances à des projets réels.", btn_cv: "Télécharger le CV" },
     projects: { title: "projets", items: [
       { badge: "QUANTUM", tech: "Python · PySide6 · NumPy", title: "Qsym", desc: "Simulateur de bureau interactif pour portes quantiques à un qubit, avec visualisation sur la sphère de Bloch.", link: "https://github.com/Alexfery/Qsym", linkLabel: "github.com/Alexfery/Qsym ↗" },
